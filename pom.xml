@@ -18,12 +18,12 @@
 
     <!--Selenium-->
     <!--seit Selenium 4.6 brauchst du keinen manuellen WebDriver mehr. Selenium hat einem eingebauten Tool namens Selenium Manager-->
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>4.44.0</version>
-        <scope>compile</scope>
-    </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.43.0</version>
+            <scope>compile</scope>
+        </dependency>
 
     <!-- JUnit 5 -->
     <dependency>

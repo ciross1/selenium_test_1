@@ -1,18 +1,18 @@
 package com.myself;
 
 
+import com.myself.test.FirstTest;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chromium.ChromiumDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Main {
     public static void main(String[] args) {
 
-        WebDriver driver = new ChromiumDriver();
-        driver.get("https://www.google.com"); // Der Browser navigiert zu Google.
+        FirstTest firstTest = new FirstTest();
 
-        System.out.println(driver.getTitle());
+        firstTest.ersterTest();
 
-        driver.quit(); // Beendet den ChromeDriver-Prozess komplett -> immer am ende verwenden
+
 
     }
 }
