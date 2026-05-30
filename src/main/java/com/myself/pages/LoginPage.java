@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
 
-     private WebDriver driver;
+     private WebDriver webDriver;
 
     // Diese Zeile speichert einen Selektor in einer Variable.
     // Sie sagt Selenium: "Das Element, das ich als usernameTextBox kenne, findest du im HTML anhand der ID Email
@@ -14,25 +14,25 @@ public class LoginPage {
     private By buttonLogin = By.cssSelector("#main > div > section > div > div.page-body > div.customer-blocks > div > form > div.buttons > button");
 
 
-      public LoginPage(WebDriver driver){
-          this.driver = driver;
+      public LoginPage(WebDriver webDriver){
+          this.webDriver = webDriver;
 
       }
 
 
       public void enterUsername(String username){
-          driver.findElement(usernameTextBox).clear();
-        driver.findElement(usernameTextBox).sendKeys(username);
+          webDriver.findElement(usernameTextBox).clear();
+          webDriver.findElement(usernameTextBox).sendKeys(username);
 
       }
 
     public void enterPassword(String password){
-        driver.findElement(passwordTextBox).clear();
-          driver.findElement(passwordTextBox).sendKeys(password);
+        webDriver.findElement(passwordTextBox).clear();
+        webDriver.findElement(passwordTextBox).sendKeys(password);
 
     }
     public void clickLoginButton(){
-          driver.findElement(buttonLogin).click();
+        webDriver.findElement(buttonLogin).click();
 
     }
 
