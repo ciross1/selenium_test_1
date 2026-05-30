@@ -9,7 +9,7 @@ import java.time.Duration;
 
 public class FirstTest {
 
-
+/*
     public void ersterTest(){
 
         WebDriver driver = new ChromeDriver();
@@ -23,12 +23,26 @@ public class FirstTest {
         String titel = driver.getTitle();
         System.out.println(titel);
 
+
+        WebElement emailBoxDefaultText = driver.findElement(By.id("Email"));
+        emailBoxDefaultText.clear();
+
         WebElement emailBox =  driver.findElement(By.id("Email"));
         emailBox.sendKeys("admin@yourstore.com");
 
+        WebElement passwordBox = driver.findElement(By.id("Password"));
+        passwordBox.sendKeys("admin");
 
-        //wird durch das id des Elements durchgesucht
-        //sendKeys() -> Funktion um tasten zu senden oder etwas einzutippen
+        //Diese Zeile macht zwei Dinge: ein Element auf der Seite finden und darauf klicken.
+        // Der ganze Selector beschreibt nur den Pfad zu diesem Button im HTML-Baum:
+        driver.findElement(By.cssSelector("#main > div > section > div > div.page-body > div.customer-blocks > div > form > div.buttons > button")).click();
+
+
+
+
+
+
+
 
 
 
@@ -42,6 +56,6 @@ public class FirstTest {
         // driver.quit(); // Beendet den ChromeDriver-Prozess komplett -> immer am ende verwenden
 
     }
-
+*/
 
 }
