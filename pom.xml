@@ -14,6 +14,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+
     <!--Selenium-->
     <!--seit Selenium 4.6 brauchst du keinen manuellen WebDriver mehr. Selenium hat einem eingebauten Tool namens Selenium Manager-->
     <dependency>
@@ -31,4 +33,5 @@
         <scope>test</scope>
     </dependency>
 
+    </dependencies>
 </project>
