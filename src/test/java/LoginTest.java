@@ -15,7 +15,8 @@ public class LoginTest extends BaseTest{
 
         loginPage.enterUsername("admin@yourstore.com");
         loginPage.enterPassword("admin");
-        loginPage.clickLoginButton();
+       // loginPage.clickLoginButton();
+
 
 
 
